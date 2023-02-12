@@ -19,9 +19,9 @@ See training and test tips at: https://github.com/junyanz/pytorch-CycleGAN-and-p
 See frequently asked questions at: https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix/blob/master/docs/qa.md
 """
 import time
-from options.train_options import TrainOptions
-from data import create_dataset
-from models import create_model
+from src.options.train_options import TrainOptions
+from src.data import create_dataset
+from src.models import create_model
 # from util.visualizer import Visualizer
 
 if __name__ == '__main__':
