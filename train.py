@@ -32,6 +32,7 @@ if __name__ == '__main__':
 
     model = create_model(opt)      # create a model given opt.model and other options
     model.setup(opt)               # regular setup: load and print networks; create schedulers
+    opt.display_id = -1  # no visdom display; the test code saves the results to a HTML file.
     # visualizer = Visualizer(opt)   # create a visualizer that display/save images and plots
     total_iters = 0                # the total number of training iterations
 
